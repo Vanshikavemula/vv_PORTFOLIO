@@ -88,6 +88,20 @@
   .navbar .menu li a:hover {
     color: #4d75a5;
   }
+
+  /* Hamburger menu button */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-menu .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
   
   /*  Home  */
   .home {
@@ -545,23 +559,35 @@
       text-align: center;
     }
     
-    .navbar .max-width {
-        display: contents;
-        padding-left: 4px;
-        padding-right: 4px;
-    }
+  .navbar .menu {
+    display: none;
+  }
 
-    .navbar .menu li {
-       list-style: none;
-       display: inline-block;
-       padding-left: 0;
-     }
-  
-     .navbar .menu li a {
-       margin-left: 12px;
-       font-size: 17px;
-       font-weight: 300;
-     }
+  /* Show the hamburger menu */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Show menu when clicked */
+  .navbar .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #092342be;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .navbar .menu.active li {
+    margin-bottom: 10px;
+  }
+
+  .navbar .menu li a {
+    font-size: 20px;
+  }
+}
 
     .about .title::after {
       content: "Who I Am?";

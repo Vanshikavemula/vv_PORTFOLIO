@@ -253,24 +253,6 @@
   width: 70%;
 }
 
-.skills-content .right {
-  overflow-y: scroll;
-  max-height: max-content;
-  scrollbar-width: auto;
-}
-
-.skills-content .right::-webkit-scrollbar {
-  width: 6px;
-}
-
-.skills-content .right::-webkit-scrollbar-thumb {
-  background-color: #1e3551;
-}
-
-.skills-content .right .hide {
-  display: none;
-}
-
 
 
 /* Projects */
@@ -543,8 +525,8 @@
     
     .home .home-content .text-3 {
       font-size: 30px;
-      text-align: center;
-    }
+      text-align: center;
+    }
     
     .navbar .max-width {
         display: contents;
@@ -575,6 +557,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      display: flex;
     }
 
     .about .about-content .left img {
@@ -583,8 +566,9 @@
       object-fit: cover;
       margin: 0 0;
       display: block;  
-      border-radius: 600px;
+      border-radius: 50%;
       justify-content: center;
+      align-items: center;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
     
@@ -600,15 +584,111 @@
     }
       
     .about .about-content .right a {
-      display: inline-block;
-      background: #1e3551;
-      color: #fff;
       font-size: 18px;
       font-weight: 500;
-      padding: 10px 30px;
-      border-radius: 6px;
-      border: 2px solid #1e3551;
-      transition: all 0.3s ease;
     }
+
+    .skills {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      text-align: center;
+    }
+    .skills .title {
+      font-size: 45px;
+      display: inline-block; 
+    }
+    
+    .skills .title::after {
+      content: "What I Know?";
+      font-size: 18px;
+      white-space: nowrap; 
+      display: block; 
+      margin-top: 5px; 
+      
+    }
+    
+    .skills .skills-content {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center;
+    }
+    
+    .skills .skills-content .left {
+      text-align: center;
+      margin-bottom: 40px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      display: flex;
+    }
+    
+    .skills .skills-content .left img {
+      height: 250px;
+      width: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    .skills .skills-content .right {
+      width: 100%; /* Ensure the content spans full width for centering */
+      max-width: 600px; /* Limit the max width for better aesthetics */
+    }
+    
+    .skills .skills-content .bars {
+      margin-bottom: 20px;
+    }
+    
+    .skills .skills-content .info {
+      display: flex;
+      justify-content: space-between; /* Space skill name and percentage */
+      font-weight: 500;
+      font-size: 18px;
+    }
+    
+    .skills .skills-content .line {
+      height: 5px;
+      width: 100%;
+      background: rgb(133, 152, 238);
+      position: relative;
+    }
+    
+    .skills .skills-content .line::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #1e3551;
+    }
+    
+    .skills-content .right .html::before {
+      width: 90%;
+    }
+    
+    .skills-content .right .css::before {
+      width: 70%;
+    }
+    
+    .skills-content .right .js::before {
+      width: 20%;
+    }
+    
+    .skills-content .right .c::before {
+      width: 70%;
+    }
+    
+    .skills-content .right .Python::before {
+      width: 60%;
+    }
+    
+    .skills-content .right .Java::before {
+      width: 70%;
+    }
+    
+    
+    
 
   }

@@ -633,8 +633,8 @@
     }
     
     .skills .skills-content .right {
-      width: 100%; /* Ensure the content spans full width for centering */
-      max-width: 600px; /* Limit the max width for better aesthetics */
+      width: 100%; 
+      max-width: 600px; 
     }
     
     .skills .skills-content .bars {
@@ -643,52 +643,119 @@
     
     .skills .skills-content .info {
       display: flex;
-      justify-content: space-between; /* Space skill name and percentage */
+      justify-content: space-between; 
       font-weight: 500;
       font-size: 18px;
     }
     
-    .skills .skills-content .line {
-      height: 5px;
-      width: 100%;
-      background: rgb(133, 152, 238);
-      position: relative;
-    }
-    
-    .skills .skills-content .line::before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: #1e3551;
-    }
-    
-    .skills-content .right .html::before {
-      width: 90%;
-    }
-    
-    .skills-content .right .css::before {
-      width: 70%;
-    }
-    
-    .skills-content .right .js::before {
-      width: 20%;
-    }
-    
-    .skills-content .right .c::before {
-      width: 70%;
-    }
-    
-    .skills-content .right .Python::before {
-      width: 60%;
-    }
-    
-    .skills-content .right .Java::before {
-      width: 70%;
-    }
-    
-    
-    
-
+    .proj-container {
+      display: flex;
+      flex-direction: column; 
+      gap: 30px;
+      align-items: center; 
+      animation: none; 
   }
+  
+  .scroll-container {
+      overflow: visible; 
+  }
+  
+  .contact .title {
+    font-size: 35px;
+  }
+
+  .contact .title::after {
+    content: "Get in Touch";
+    font-size: 18px;
+    white-space: nowrap;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .contact .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .contact-content .column {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .contact-content .left p {
+    text-align: center; 
+  }
+
+  .contact .contact-content .icons {
+    align-items: flex-start;
+    padding: 0; 
+  }
+
+  .contact .contact-content .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .contact .contact-content .row i {
+    margin-left: 0; 
+    margin-right:0; 
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .social-menu ul {
+    position: static; 
+    transform: none;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 0;
+    margin: 20px 0; 
+  }
+
+  .social-menu ul li {
+    margin: 10px 8px; 
+  }
+
+  .social-menu ul li .fa {
+    font-size: 24px; 
+    line-height: 50px; 
+  }
+
+  .social-menu ul li a {
+    width: 30px;
+    height: 30px; 
+    box-shadow: none; 
+    margin: 0 auto; 
+  }
+
+  .contact .column.right {
+    width: 100%; 
+    padding: 0 5px;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .contact .right form .field {
+    width: 100%;
+  }
+
+  .contact .right form .button-area {
+    justify-content: center; 
+  }
+
+  footer {
+    padding: 10px 8px; 
+    font-size: 14px; 
+    text-align: center; 
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}

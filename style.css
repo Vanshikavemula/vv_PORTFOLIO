@@ -369,6 +369,7 @@
     display: flex;
     height: 65px;
     align-items: center;
+    margin-bottom: 10px;
   }
   
   
@@ -633,8 +634,9 @@
     }
     
     .skills .skills-content .right {
-      width: 100%; 
+      width: 95%; 
       max-width: 600px; 
+      padding-bottom: 50px;
     }
     
     .skills .skills-content .bars {
@@ -648,6 +650,10 @@
       font-size: 18px;
     }
     
+    .projects .title{
+      margin-top: 175px;
+    }
+
     .proj-container {
       display: flex;
       flex-direction: column; 
@@ -672,6 +678,10 @@
     margin-top: 5px;
   }
 
+  .contact .contact-content .text{
+    text-align: center;
+  }
+
   .contact .contact-content {
     flex-direction: column;
     align-items: center;
@@ -685,26 +695,38 @@
 
   .contact .contact-content .left p {
     text-align: center; 
+    margin-bottom: 50px;
+    width: 100%;
   }
 
   .contact .contact-content .icons {
     align-items: flex-start;
     padding: 0; 
+    margin-left: 10px;
   }
 
   .contact .contact-content .row {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
     width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    margin: 0;
   }
 
   .contact .contact-content .row i {
     margin-left: 0; 
-    margin-right:0; 
+    margin-right: 20px;
     font-size: 25px;
     text-align: left;
   }
+
+ .contact .max-width{
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: auto;
+ }
 
   .social-menu ul {
     position: static; 
